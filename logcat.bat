@@ -1,0 +1,1 @@
+START %2 logcat %1

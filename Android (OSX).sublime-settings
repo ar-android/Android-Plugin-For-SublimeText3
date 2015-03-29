@@ -1,0 +1,9 @@
+{
+    "jdk_bin": "/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home",
+	"ant_bin": "/usr/share/ant/bin",
+    "android_sdk": "",
+	"default_android_project_dir": "",
+    "debug": true,
+    "compile_on_save": true,
+    "run_on_device": true
+}

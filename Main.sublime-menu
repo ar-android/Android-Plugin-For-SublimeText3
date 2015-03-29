@@ -1,0 +1,424 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Android",
+                        "children":
+                        [
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (Linux).sublime-settings",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (OSX).sublime-settings",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (Windows).sublime-settings",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (Linux).sublime-settings",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (OSX).sublime-settings",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (Windows).sublime-settings",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-", "id": "sep" },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Key Bindings – User"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id":"android",
+        "caption":"Android",
+        "mnemonic":"A",
+        "children":
+        [
+            {
+                "id": "projects",
+                "caption": "Projects",
+                "mnemonic": "P",
+                "children":
+                    [
+                        {
+                            "id":"android_new_project",
+                            "caption": "New project",
+                            "command": "android_new_project",
+                            "mnemonic": "N"
+                        },
+                        {
+                            "id":"import_android_project",
+                            "caption": "Import project",
+                            "command": "android_import_project",
+                            "mnemonic": "I"
+                        }
+                    ]
+            },
+            { "caption": "-", "id": "sep" },
+            {
+                "id": "refactor",
+                "caption": "Refactor...",
+                "mnemonic": "R",
+                "children":
+                [
+                    {
+                        "id": "refactor_string",
+                        "caption": "String",
+                        "command": "android_refactor_string",
+                        "mnemonic": "S"
+                    }
+                ]
+            },
+            {
+                "id": "snippet",
+                "caption": "Snipets...",
+                "mnemonic": "S",
+                "children":
+                [
+                    {
+                        "id": "insert_snippet",
+                        "caption": "Insert snippet",
+                        "command": "android_insert_snippet",
+                        "mnemonic": "I"
+                    },
+                    { "caption": "-", "id": "sep" },
+                    {
+                        "id": "explore_snippet",
+                        "caption": "Edit snippets",
+                        "command": "android_explore_snippets",
+                        "mnemonic": "N"
+                    }
+                ]
+            },
+            { "caption": "-", "id": "sep" },
+            {
+                "caption": "Build...",
+                "id": "build",
+                "mnemonic": "C",
+                "children":
+                [
+                    {
+                        "id": "build",
+                        "caption": "Build",
+                        "command": "android_build",
+                        "mnemonic": "B"
+                    },
+                    { "caption": "-", "id": "sep" },
+                    {
+                        "id": "build_debug",
+                        "checkbox": true,
+                        "caption": "Build debug",
+                        "command": "android_build_debug",
+                        "mnemonic": "S"
+                    },
+                    {
+                        "id": "build_on_save",
+                        "checkbox": true,
+                        "caption": "Build on save",
+                        "command": "android_build_on_save",
+                        "mnemonic": "S"
+                    },
+                    {
+                        "id": "run_on_device",
+                        "checkbox": true,
+                        "caption": "Run on device",
+                        "command": "android_run_on_device",
+                        "mnemonic": "I"
+                    },
+                    { "caption": "-", "id": "sep" },
+                    {
+                        "id": "clean_project",
+                        "caption": "Clean project",
+                        "command": "android_clean"
+                    }
+                ]
+            },
+            {
+                "caption": "Install...",
+                "id": "install",
+                "mnemonic": "D",
+                "children":
+                    [
+                        {
+                            "id": "install_apk",
+                            "caption": "Install APK",
+                            "command": "android_install",
+                            "mnemonic": "I"
+                        },
+                        {
+                            "id": "uninstall_apk",
+                            "caption": "Uninstall APK",
+                            "command": "android_uninstall",
+                            "mnemonic":"U"
+                        },
+                        { "caption": "-", "id": "sep" },
+                        {
+                            "id": "adb_shell",
+                            "caption": "Open ADB Shell",
+                            "command": "android_adb_shell",
+                            "mnemonic": "S"
+                        },
+                        {
+                            "id": "logcat",
+                            "caption": "Run ADB Logcat",
+                            "command": "android_adb_logcat",
+                            "mnemonic": "L"
+                        }
+                    ]
+            },
+            { "caption": "-", "id": "sep" },
+            {
+                "id": "create_certificate",
+                "caption": "Create Certificate",
+                "command": "android_create_certificate",
+                "mnemonic": "C"
+            },
+            {
+                "id": "sdk_tools",
+                "caption": "SDK Tools",
+                "mnemonic": "T",
+                "children":
+                    [
+                        {
+                            "id": "sdk_manager",
+                            "caption": "Launch Android SDK Manager",
+                            "command": "android_open_sdk",
+                            "mnemonic": "S"
+                        },
+                        {
+                            "id": "avd_manager",
+                            "caption": "Launch AVD Manager",
+                            "command": "android_open_avd",
+                            "mnemonic": "A"
+                        },
+                        {
+                            "id": "ddms_manager",
+                            "caption": "Launch Dalvink Debug Monitor",
+                            "command": "android_open_ddms",
+                            "mnemonic": "D"
+                        }
+                    ]
+            },
+            { "caption": "-", "id": "sep" },
+            {
+                "caption": "Preferences",
+                "id": "android_preferences",
+                "mnemonic": "P",
+                "children":
+                [
+                    {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (Linux).sublime-settings",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (OSX).sublime-settings",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Android (Windows).sublime-settings",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Settings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (Linux).sublime-settings",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (OSX).sublime-settings",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Android (Windows).sublime-settings",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Settings – User"
+                            },
+                            { "caption": "-", "id": "sep" },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/Android/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Key Bindings – Default"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (Linux).sublime-keymap",
+                                    "platform": "Linux"
+                                },
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (OSX).sublime-keymap",
+                                    "platform": "OSX"
+                                },
+                                "caption": "Key Bindings – User"
+                            },
+                            {
+                                "command": "open_file",
+                                "args":
+                                {
+                                    "file": "${packages}/User/Default (Windows).sublime-keymap",
+                                    "platform": "Windows"
+                                },
+                                "caption": "Key Bindings – User"
+                            }
+                ]
+            }
+        ]
+    }
+]

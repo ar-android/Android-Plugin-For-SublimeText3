@@ -1,0 +1,4 @@
+[
+    { "keys": ["ctrl+alt+shift+b"], "command": "android_build" },
+    { "keys": ["ctrl+alt+shift+c"], "command": "android_clean" }
+]

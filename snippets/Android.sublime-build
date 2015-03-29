@@ -1,0 +1,22 @@
+{
+    "windows":
+    {
+        "cmd": ["ant.bat", "debug"],
+        "working_dir": "$project_path",
+        "target": "android_build"
+    },
+
+    "osx":
+    {
+        "cmd": ["ant", "debug"],
+        "working_dir": "$project_path",
+        "target": "android_build"
+    },
+
+    "linux":
+    {
+        "cmd": ["ant", "debug"],
+        "working_dir": "$project_path",
+        "target": "android_build"
+    }
+}

@@ -1,0 +1,9 @@
+{
+	"jdk_bin": "/usr/lib/jvm/java-8-oracle/jre",
+	"ant_bin": "/usr/share/ant/bin",
+	"android_sdk": "/media/ar/52e298d7-f561-4c49-9501-1bdb1ecf8566/home/rosid/Untility/sdk",
+    "default_android_project_dir": "/media/ar/52e298d7-f561-4c49-9501-1bdb1ecf8566/sublime",
+    "debug": true,
+    "compile_on_save": true,
+    "run_on_device": true
+}
